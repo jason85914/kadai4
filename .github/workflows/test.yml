@@ -1,0 +1,12 @@
+name: Test GCD Script
+on: [push]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: リポジトリをチェックアウト
+        uses: actions/checkout@v3
+      - name: テストスクリプトの実行
+        run: |
+          ./test.sh
